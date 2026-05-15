@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>AI Chatbot</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Material Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+    rel="stylesheet"
+  />
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+  </button>
+
+  <div class="chatbot-popup">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <div class="header-info">
+        <span class="material-symbols-rounded">smart_toy</span>
+        <h2>AI Chatbot</h2>
+      </div>
+
+      <button class="close-btn material-symbols-rounded">
+        keyboard_arrow_down
+      </button>
+    </div>
+
+    <!-- Chat Body -->
+    <div class="chat-body">
+
+      <div class="message bot-message">
+        <span class="material-symbols-rounded bot-avatar">smart_toy</span>
+
+        <div class="message-text">
+          Hello 👋 <br>
+          How can I help you today?
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="chat-footer">
+
+      <form class="chat-form">
+
+        <textarea
+          placeholder="Type your message..."
+          class="message-input"
+          required
+        ></textarea>
+
+      <div class="chat-controls">
+
+  <!-- Emoji Button -->
+  <span id="emoji-picker"
+        class="material-symbols-rounded">
+        sentiment_satisfied
+  </span>
+
+  <!-- Emoji Popup -->
+  <div class="emoji-picker-container"></div>
+
+  <!-- Upload Button -->
+  <label for="file-input"
+         class="material-symbols-rounded upload-btn">
+         attach_file
+  </label>
+
+  <input type="file"
+         id="file-input"
+         hidden>
+
+  <!-- Send Button -->
+  <button type="submit"
+          class="send-btn material-symbols-rounded">
+          arrow_upward
+  </button>
+
+</div>
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+</body>
+</html>
